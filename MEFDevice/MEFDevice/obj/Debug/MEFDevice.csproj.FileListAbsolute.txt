@@ -1,0 +1,9 @@
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\bin\Debug\MEFDevice.exe
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\bin\Debug\MEFDevice.pdb
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\obj\Debug\MEFDevice.csprojResolveAssemblyReference.cache
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\obj\Debug\MEFDevice.csproj.CoreCompileInputs.cache
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\obj\Debug\MEFDevice.exe
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\obj\Debug\MEFDevice.pdb
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\bin\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\bin\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\MEFDevice\MEFDevice\obj\Debug\MEFDevice.csproj.CopyComplete

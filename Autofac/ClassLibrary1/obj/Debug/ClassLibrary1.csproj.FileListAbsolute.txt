@@ -1,0 +1,7 @@
+E:\DeviceLibrary\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+E:\DeviceLibrary\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+E:\DeviceLibrary\ClassLibrary1\bin\Debug\DeviceLibrary.dll
+E:\DeviceLibrary\ClassLibrary1\bin\Debug\DeviceLibrary.pdb
+E:\DeviceLibrary\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+E:\DeviceLibrary\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+E:\DeviceLibrary\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -1,0 +1,10 @@
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\Extensions\ExtendedOperations.dll
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\Extensions\ExtendedOperations.pdb
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\ExtendedOperations\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\ExtendedOperations\obj\Debug\ExtendedOperations.dll
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\ExtendedOperations\obj\Debug\ExtendedOperations.pdb
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\Extensions\ExtendedOperations.dll
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\Extensions\ExtendedOperations.pdb
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\ExtendedOperations\obj\Debug\ExtendedOperations.csprojResolveAssemblyReference.cache
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\ExtendedOperations\obj\Debug\ExtendedOperations.dll
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\ExtendedOperations\obj\Debug\ExtendedOperations.pdb

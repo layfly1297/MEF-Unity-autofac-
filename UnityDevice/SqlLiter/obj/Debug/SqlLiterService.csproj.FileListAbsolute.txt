@@ -1,0 +1,9 @@
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\bin\Debug\SqlLiterService.dll
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\bin\Debug\SqlLiterService.pdb
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\bin\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\bin\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\obj\Debug\SqlLiterService.csprojResolveAssemblyReference.cache
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\obj\Debug\SqlLiterService.csproj.CoreCompileInputs.cache
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\obj\Debug\SqlLiterService.csproj.CopyComplete
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\obj\Debug\SqlLiterService.dll
+C:\Users\10946\source\repos\UnityDevice\SqlLiter\obj\Debug\SqlLiterService.pdb

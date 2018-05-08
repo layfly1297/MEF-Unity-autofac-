@@ -1,0 +1,9 @@
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\bin\Debug\ReceiptPrinter_XBY.dll
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\bin\Debug\ReceiptPrinter_XBY.pdb
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\bin\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\bin\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\obj\Debug\ReceiptPrinter_XBY.csprojResolveAssemblyReference.cache
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\obj\Debug\ReceiptPrinter_XBY.csproj.CoreCompileInputs.cache
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\obj\Debug\ReceiptPrinter_XBY.csproj.CopyComplete
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\obj\Debug\ReceiptPrinter_XBY.dll
+C:\Users\10946\source\repos\MEFDevice\ReceiptPrinter_XBY\obj\Debug\ReceiptPrinter_XBY.pdb

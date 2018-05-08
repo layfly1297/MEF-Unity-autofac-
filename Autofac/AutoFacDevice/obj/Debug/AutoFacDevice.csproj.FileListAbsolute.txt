@@ -1,0 +1,13 @@
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\AutoFacDevice.exe
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\AutoFacDevice.pdb
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\Autofac.dll
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\Autofac.xml
+E:\DeviceLibrary\AutoFacDevice\obj\Debug\AutoFacDevice.csprojResolveAssemblyReference.cache
+E:\DeviceLibrary\AutoFacDevice\obj\Debug\AutoFacDevice.exe
+E:\DeviceLibrary\AutoFacDevice\obj\Debug\AutoFacDevice.pdb
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\ClassLibrary1.dll
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\DeviceLibrary.dll
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\ClassLibrary1.pdb
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\DeviceLibrary.pdb
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\ClassLibrary2PRT.dll
+E:\DeviceLibrary\AutoFacDevice\bin\Debug\ClassLibrary2PRT.pdb

@@ -1,0 +1,7 @@
+E:\DeviceLibrary\ClassLibrary2PRT\bin\Debug\ClassLibrary2PRT.dll
+E:\DeviceLibrary\ClassLibrary2PRT\bin\Debug\ClassLibrary2PRT.pdb
+E:\DeviceLibrary\ClassLibrary2PRT\bin\Debug\DeviceLibrary.dll
+E:\DeviceLibrary\ClassLibrary2PRT\bin\Debug\DeviceLibrary.pdb
+E:\DeviceLibrary\ClassLibrary2PRT\obj\Debug\ClassLibrary2PRT.csprojResolveAssemblyReference.cache
+E:\DeviceLibrary\ClassLibrary2PRT\obj\Debug\ClassLibrary2PRT.dll
+E:\DeviceLibrary\ClassLibrary2PRT\obj\Debug\ClassLibrary2PRT.pdb

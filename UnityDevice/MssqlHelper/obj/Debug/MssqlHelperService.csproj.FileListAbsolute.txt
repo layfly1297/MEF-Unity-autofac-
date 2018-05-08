@@ -1,0 +1,9 @@
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\bin\Debug\MssqlHelperService.dll
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\bin\Debug\MssqlHelperService.pdb
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\bin\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\bin\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\obj\Debug\MssqlHelperService.csprojResolveAssemblyReference.cache
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\obj\Debug\MssqlHelperService.csproj.CoreCompileInputs.cache
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\obj\Debug\MssqlHelperService.csproj.CopyComplete
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\obj\Debug\MssqlHelperService.dll
+C:\Users\10946\source\repos\UnityDevice\MssqlHelper\obj\Debug\MssqlHelperService.pdb

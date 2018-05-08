@@ -1,0 +1,6 @@
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\bin\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\bin\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\obj\Debug\DeviceInterface.csproj.CoreCompileInputs.cache
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\obj\Debug\DeviceInterface.dll
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\obj\Debug\DeviceInterface.pdb
+C:\Users\10946\source\repos\UnityDevice\DeviceInterface\obj\Debug\DeviceInterface.csprojResolveAssemblyReference.cache

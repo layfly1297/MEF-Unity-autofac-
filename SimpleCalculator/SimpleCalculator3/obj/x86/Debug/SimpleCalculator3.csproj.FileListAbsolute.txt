@@ -1,0 +1,10 @@
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\bin\Debug\SimpleCalculator3.exe
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\bin\Debug\SimpleCalculator3.pdb
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.exe
+C:\Users\v-rizhou\Downloads\SimpleCalculator\SimpleCalculator\CS\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.pdb
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.exe
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.pdb
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\bin\Debug\SimpleCalculator3.exe
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\bin\Debug\SimpleCalculator3.pdb
+C:\Users\10946\Documents\MEF&MAF\SimpleCalculator\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+E:\DeviceLibrary\DeviceLibrary\bin\Debug\DeviceLibrary.dll
+E:\DeviceLibrary\DeviceLibrary\bin\Debug\DeviceLibrary.pdb
+E:\DeviceLibrary\DeviceLibrary\obj\Debug\DeviceLibrary.dll
+E:\DeviceLibrary\DeviceLibrary\obj\Debug\DeviceLibrary.pdb
+E:\DeviceLibrary\DeviceLibrary\obj\Debug\DeviceLibrary.csprojResolveAssemblyReference.cache
