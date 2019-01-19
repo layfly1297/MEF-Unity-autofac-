@@ -1,0 +1,15 @@
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\UserControl1.g.cs
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation_MarkupCompile.cache
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation_MarkupCompile.lref
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\bin\Release\TextBoxImitation.exe.config
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\bin\Release\TextBoxImitation.exe
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\bin\Release\TextBoxImitation.pdb
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\UserControl1.baml
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.g.resources
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.Form1.resources
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.Form2矢量图.resources
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.Properties.Resources.resources
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.csproj.GenerateResource.cache
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.csproj.CoreCompileInputs.cache
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.exe
+C:\Users\keyi\Desktop\screenTest\demo\screenTest\TextBoxImitation\obj\Release\TextBoxImitation.pdb

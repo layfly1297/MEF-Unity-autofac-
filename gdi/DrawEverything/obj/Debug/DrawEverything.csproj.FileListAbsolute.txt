@@ -1,0 +1,8 @@
+C:\Users\lican\Desktop\DrawEverything\bin\Debug\DrawEverything.dll
+C:\Users\lican\Desktop\DrawEverything\bin\Debug\DrawEverything.pdb
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.Properties.Resources.resources
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.csproj.GenerateResource.Cache
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.dll
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.pdb
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.csproj.CoreCompileInputs.cache
+C:\Users\lican\Desktop\DrawEverything\obj\Debug\DrawEverything.csprojAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\bin\Release\DrawEverything.dll
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\bin\Release\DrawEverything.pdb
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\obj\Release\DrawEverything.Properties.Resources.resources
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\obj\Release\DrawEverything.csproj.GenerateResource.cache
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\obj\Release\DrawEverything.csproj.CoreCompileInputs.cache
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\obj\Release\DrawEverything.dll
+C:\Users\keyi\Desktop\screenTest\demo\DrawEverything\obj\Release\DrawEverything.pdb

@@ -1,0 +1,363 @@
+﻿     /*   IME消息
+      　　以下列出IME中用到的消息。
+                     //当设备的硬件配置改变时发送此消息给应用程序或设备驱动程序
+              //WM_IME_STARTCOMPOSITION = $010D;
+              //WM_IME_ENDCOMPOSITION = $010E;
+              //WM_IME_COMPOSITION = $010F;
+              //WM_IME_KEYLAST = $010F;
+              //WM_IME_SETCONTEXT = $0281;
+              //WM_IME_NOTIFY = $0282;
+              //WM_IME_CONTROL = $0283;
+              //WM_IME_COMPOSITIONFULL = $0284;
+              //WM_IME_SELECT = $0285;
+              //WM_IME_CHAR = $0286;
+              //WM_IME_REQUEST = $0288;
+              //WM_IME_KEYDOWN = $0290;
+              //WM_IME_KEYUP = $0291;
+              //WM_MDICREATE = $0220;
+      WM_IME_CHAR（IME得到了转换结果中的一个字符）
+      WM_IME_COMPOSITION（IME根据用户击键的情况更改了按键组合状态）
+      WM_IME_COMPOSITIONFULL（IME检测到按键组合窗口的区域无法继续扩展）
+      WM_IME_CONTROL（由应用程序直接向IME发出控制请求）
+      WM_IME_ENDCOMPOSITION（IME完成了对用户击键情况的组合）
+      WM_IME_KEYDOWN（检测到“键盘上的某键被按下”的动作，同时在消息队列中保留该消息）
+      WM_IME_KEYUP（检测到“键盘上的某键已弹起”的动作，同时在消息队列中保留该消息）
+      WM_IME_NOTIFY（IME窗口发生了改变）
+      WM_IME_REQUEST（通知：IME需要应用程序提供命令和请求信息）
+      WM_IME_SELECT（操作系统将改变当前IME）
+      WM_IME_SETCONTEXT（输入焦点转移到了某个窗口上）
+      WM_IME_STARTCOMPOSITION（IME准备生成转换结果）
+
+      IME函数
+      　　本节列出了所有IME函数。
+      函数
+       说明
+      EnumInputContext
+       由应用程序定义的，提供给ImmEnumInputContext函数用来处理输入环境的一个回调函数。
+      EnumRegisterWordProc
+       由应用程序定义的，结合ImmEnumRegisterWord函数一起使用的一个回调函数。
+      ImmAssociateContext
+       建立指定输入环境与窗口之间的关联。
+      ImmAssociateContextEx
+       更改指定输入环境与窗口（或其子窗口）之间的关联。
+      ImmConfigureIME
+       显示指定的输入现场标识符的配置对话框。
+      ImmCreateContext
+       创建一个新的输入环境，并为它分配内存和初始化它。
+      ImmDestroyContext
+       销毁输入环境并释放和它关联的内存。
+      ImmDisableIME
+       关闭一个线程或一个进程中所有线程的IME功能。
+      ImmDisableTextFrameService
+       关闭指定线程的文本服务框架（TSF）功能－－虽然这里把它列了出来，但建议程序员最好不要使用这个函数。
+      ImmEnumInputContext
+       获取指定线程的输入环境。
+      ImmEnumRegisterWord
+       列举跟指定读入串、样式和注册串相匹配的注册串。
+      ImmEscape
+       对那些不能通过IME API函数来访问的特殊输入法程序提供兼容性支持的一个函数。
+      ImmGetCandidateList
+       获取一个候选列表。
+      ImmGetCandidateListCount
+       获取候选列表的大小。
+      ImmGetCandidateWindow
+       获取有关候选列表窗口的信息。
+      ImmGetCompositionFont
+       获取有关当前用来显示按键组合窗口中的字符的逻辑字体的信息。
+      ImmGetCompositionString
+       获取有关组合字符串的信息。
+      ImmGetCompositionWindow
+       获取有关按键组合窗口的信息。
+      ImmGetContext
+       获取与指定窗口相关联的输入环境。
+      ImmGetConversionList
+       在不生成任何跟IME有关的消息的情况下，获取输入按键字符组合或输出文字的转换结果列表。
+      ImmGetConversionStatus
+       获取当前转换状态。
+      ImmGetDefaultIMEWnd
+       获取缺省IME类窗口的句柄。
+      ImmGetDescription
+       复制IME的说明信息到指定的缓冲区中。
+      ImmGetGuideLine
+       获取出错信息。
+      ImmGetIMEFileName
+       获取跟指定输入现场相关联的IME文件名。
+      ImmGetImeMenuItems
+       获取注册在指定输入环境的IME菜单上的菜单项。
+      ImmGetOpenStatus
+       检测IME是否打开。
+      ImmGetProperty
+       获取跟指定输入现场相关联的IME的属性和功能。
+      ImmGetRegisterWordStyle
+       获取跟指定输入现场相关联的IME所支持的样式列表。
+      ImmGetStatusWindowPos
+       获取状态窗口的位置。
+      ImmGetVirtualKey
+       获取跟IME处理的键盘输入消息相关联的初始虚拟键值。
+      ImmInstallIME
+       安装一个IME。
+      ImmIsIME
+       检测指定的输入现场是否有和它相关的IME。
+      ImmIsUIMessage
+       检查IME窗口消息并发送那些消息到特定的窗口。
+      ImmNotifyIME
+       通知IME有关输入环境状态已改变的消息。
+      ImmRegisterWord
+       注册一个输出文字到跟指定输入现场相关联的IME的字典中去。
+      ImmReleaseContext
+       销毁输入环境并解除对跟它相关联的内存的锁定。
+      ImmSetCandidateWindow
+       设置有关候选列表窗口的信息。
+      ImmSetCompositionFont
+       设置用来显示按键组合窗口中的字符的逻辑字体。
+      ImmSetCompositionString
+       设置按键组合字符串的字符内容、属性和子串信息。
+      ImmSetCompositionWindow
+       设置按键组合窗口的位置。
+      ImmSetConversionStatus
+       设置当前转换状态。
+      ImmSetOpenStatus
+       打开或关闭IME功能。
+      ImmSetStatusWindowPos
+       设置状态窗口的位置。
+      ImmSimulateHotKey
+       在指定的窗口中模拟一个特定的IME热键动作，以触发该窗口相应的响应动作。
+      ImmUnregisterWord
+       从跟指定输入环境相关联的IME的字典中注销一个输出文字。
+
+      IME命令
+      　　以下列出IME中用到的命令（控制消息）。
+
+      IMC_CLOSESTATUSWINDOW（隐藏状态窗口）
+      IMC_GETCANDIDATEPOS（获取候选窗口的位置）
+      IMC_GETCOMPOSITIONFONT（获取用来显示按键组合窗口中的文本的逻辑字体）
+      IMC_GETCOMPOSITIONWINDOW（获取按键组合窗口的位置）
+      IMC_GETSTATUSWINDOWPOS（获取状态窗口的位置）
+      IMC_OPENSTATUSWINDOW（显示状态窗口）
+      IMC_SETCANDIDATEPOS（设置候选窗口的位置）
+      IMC_SETCOMPOSITIONFONT（设置用来显示按键组合窗口中的文本的逻辑字体）
+      IMC_SETCOMPOSITIONWINDOW（设置按键组合窗口的样式）
+      IMC_SETSTATUSWINDOWPOS（设置状态窗口的位置）
+      IMN_CHANGECANDIDATE（IME通知应用程序：候选窗口中的内容将改变）
+      IMN_CLOSECANDIDATE（IME通知应用程序：候选窗口将关闭）
+      IMN_CLOSESTATUSWINDOW（IME通知应用程序：状态窗口将关闭）
+      IMN_GUIDELINE（IME通知应用程序：将显示一条出错或其他信息）
+      IMN_OPENCANDIDATE（IME通知应用程序：将打开候选窗口）
+      IMN_OPENSTATUSWINDOW（IME通知应用程序：将创建状态窗口）
+      IMN_SETCANDIDATEPOS（IME通知应用程序：已结束候选处理同时将移动候选窗口）
+      IMN_SETCOMPOSITIONFONT（IME通知应用程序：输入内容的字体已更改）
+      IMN_SETCOMPOSITIONWINDOW（IME通知应用程序：按键组合窗口的样式或位置已更改）
+      IMN_SETCONVERSIONMODE（IME通知应用程序：输入内容的转换模式已更改）
+      IMN_SETOPENSTATUS（IME通知应用程序：输入内容的状态已更改）
+      IMN_SETSENTENCEMODE（IME通知应用程序：输入内容的语句模式已更改）
+      IMN_SETSTATUSWINDOWPOS（IME通知应用程序：输入内容中的状态窗口的位置已更改）
+      IMR_CANDIDATEWINDOW（通知：选定的IME需要应用程序提供有关候选窗口的信息）
+      IMR_COMPOSITIONFONT（通知：选定的IME需要应用程序提供有关用在按键组合窗口中的字体的信息）
+      IMR_COMPOSITIONWINDOW（通知：选定的IME需要应用程序提供有关按键组合窗口的信息）
+      IMR_CONFIRMRECONVERTSTRING（通知：IME需要应用程序更改RECONVERTSTRING结构）
+      IMR_DOCUMENTFEED（通知：选定的IME需要从应用程序那里取得已转换的字符串）
+      IMR_QUERYCHARPOSITION（通知：选定的IME需要应用程序提供有关组合字符串中某个字符的位置信息）
+      IMR_RECONVERTSTRING（通知：选定的IME需要应用程序提供一个用于自动更正的字符串）
+
+      IME编程中需要用到的数据结构
+      　　这里列了所有在使用输入法编辑器函数和消息时需要用到的数据结构。
+      　　CANDIDATEFORM（描述候选窗口的位置信息）
+      　　CANDIDATELIST（描述有关候选列表的信息）
+      　　COMPOSITIONFORM（描述按键组合窗口的样式和位置信息）
+      　　IMECHARPOSITION（描述按键组合窗口中的字符的位置信息）
+      　　IMEMENUITEMINFO（描述IME菜单项的信息）
+      　　RECONVERTSTRING（定义用于IME自动更正功能的字符串）
+      　　REGISTERWORD（描述一个要注册的读入信息或文字内容）
+      　　STYLEBUF（描述样式的标识符和名称）
+
+      IME常量
+      　　这里列出了所有在使用输入法编辑器函数和消息时需要用到的常量。
+      　　?　IME转换模式常量
+      　　?　IME按键组合字符串常量
+      　　?　IME热键标识常量
+      　　?　IME句型模式常量
+      　　?　IMMEscape函数常量 */
+
+     /*   IME消息
+      　　以下列出IME中用到的消息。
+                     //当设备的硬件配置改变时发送此消息给应用程序或设备驱动程序
+              //WM_IME_STARTCOMPOSITION = $010D;
+              //WM_IME_ENDCOMPOSITION = $010E;
+              //WM_IME_COMPOSITION = $010F;
+              //WM_IME_KEYLAST = $010F;
+              //WM_IME_SETCONTEXT = $0281;
+              //WM_IME_NOTIFY = $0282;
+              //WM_IME_CONTROL = $0283;
+              //WM_IME_COMPOSITIONFULL = $0284;
+              //WM_IME_SELECT = $0285;
+              //WM_IME_CHAR = $0286;
+              //WM_IME_REQUEST = $0288;
+              //WM_IME_KEYDOWN = $0290;
+              //WM_IME_KEYUP = $0291;
+              //WM_MDICREATE = $0220;
+      WM_IME_CHAR（IME得到了转换结果中的一个字符）
+      WM_IME_COMPOSITION（IME根据用户击键的情况更改了按键组合状态）
+      WM_IME_COMPOSITIONFULL（IME检测到按键组合窗口的区域无法继续扩展）
+      WM_IME_CONTROL（由应用程序直接向IME发出控制请求）
+      WM_IME_ENDCOMPOSITION（IME完成了对用户击键情况的组合）
+      WM_IME_KEYDOWN（检测到“键盘上的某键被按下”的动作，同时在消息队列中保留该消息）
+      WM_IME_KEYUP（检测到“键盘上的某键已弹起”的动作，同时在消息队列中保留该消息）
+      WM_IME_NOTIFY（IME窗口发生了改变）
+      WM_IME_REQUEST（通知：IME需要应用程序提供命令和请求信息）
+      WM_IME_SELECT（操作系统将改变当前IME）
+      WM_IME_SETCONTEXT（输入焦点转移到了某个窗口上）
+      WM_IME_STARTCOMPOSITION（IME准备生成转换结果）
+
+      IME函数
+      　　本节列出了所有IME函数。
+      函数
+       说明
+      EnumInputContext
+       由应用程序定义的，提供给ImmEnumInputContext函数用来处理输入环境的一个回调函数。
+      EnumRegisterWordProc
+       由应用程序定义的，结合ImmEnumRegisterWord函数一起使用的一个回调函数。
+      ImmAssociateContext
+       建立指定输入环境与窗口之间的关联。
+      ImmAssociateContextEx
+       更改指定输入环境与窗口（或其子窗口）之间的关联。
+      ImmConfigureIME
+       显示指定的输入现场标识符的配置对话框。
+      ImmCreateContext
+       创建一个新的输入环境，并为它分配内存和初始化它。
+      ImmDestroyContext
+       销毁输入环境并释放和它关联的内存。
+      ImmDisableIME
+       关闭一个线程或一个进程中所有线程的IME功能。
+      ImmDisableTextFrameService
+       关闭指定线程的文本服务框架（TSF）功能－－虽然这里把它列了出来，但建议程序员最好不要使用这个函数。
+      ImmEnumInputContext
+       获取指定线程的输入环境。
+      ImmEnumRegisterWord
+       列举跟指定读入串、样式和注册串相匹配的注册串。
+      ImmEscape
+       对那些不能通过IME API函数来访问的特殊输入法程序提供兼容性支持的一个函数。
+      ImmGetCandidateList
+       获取一个候选列表。
+      ImmGetCandidateListCount
+       获取候选列表的大小。
+      ImmGetCandidateWindow
+       获取有关候选列表窗口的信息。
+      ImmGetCompositionFont
+       获取有关当前用来显示按键组合窗口中的字符的逻辑字体的信息。
+      ImmGetCompositionString
+       获取有关组合字符串的信息。
+      ImmGetCompositionWindow
+       获取有关按键组合窗口的信息。
+      ImmGetContext
+       获取与指定窗口相关联的输入环境。
+      ImmGetConversionList
+       在不生成任何跟IME有关的消息的情况下，获取输入按键字符组合或输出文字的转换结果列表。
+      ImmGetConversionStatus
+       获取当前转换状态。
+      ImmGetDefaultIMEWnd
+       获取缺省IME类窗口的句柄。
+      ImmGetDescription
+       复制IME的说明信息到指定的缓冲区中。
+      ImmGetGuideLine
+       获取出错信息。
+      ImmGetIMEFileName
+       获取跟指定输入现场相关联的IME文件名。
+      ImmGetImeMenuItems
+       获取注册在指定输入环境的IME菜单上的菜单项。
+      ImmGetOpenStatus
+       检测IME是否打开。
+      ImmGetProperty
+       获取跟指定输入现场相关联的IME的属性和功能。
+      ImmGetRegisterWordStyle
+       获取跟指定输入现场相关联的IME所支持的样式列表。
+      ImmGetStatusWindowPos
+       获取状态窗口的位置。
+      ImmGetVirtualKey
+       获取跟IME处理的键盘输入消息相关联的初始虚拟键值。
+      ImmInstallIME
+       安装一个IME。
+      ImmIsIME
+       检测指定的输入现场是否有和它相关的IME。
+      ImmIsUIMessage
+       检查IME窗口消息并发送那些消息到特定的窗口。
+      ImmNotifyIME
+       通知IME有关输入环境状态已改变的消息。
+      ImmRegisterWord
+       注册一个输出文字到跟指定输入现场相关联的IME的字典中去。
+      ImmReleaseContext
+       销毁输入环境并解除对跟它相关联的内存的锁定。
+      ImmSetCandidateWindow
+       设置有关候选列表窗口的信息。
+      ImmSetCompositionFont
+       设置用来显示按键组合窗口中的字符的逻辑字体。
+      ImmSetCompositionString
+       设置按键组合字符串的字符内容、属性和子串信息。
+      ImmSetCompositionWindow
+       设置按键组合窗口的位置。
+      ImmSetConversionStatus
+       设置当前转换状态。
+      ImmSetOpenStatus
+       打开或关闭IME功能。
+      ImmSetStatusWindowPos
+       设置状态窗口的位置。
+      ImmSimulateHotKey
+       在指定的窗口中模拟一个特定的IME热键动作，以触发该窗口相应的响应动作。
+      ImmUnregisterWord
+       从跟指定输入环境相关联的IME的字典中注销一个输出文字。
+
+      IME命令
+      　　以下列出IME中用到的命令（控制消息）。
+
+      IMC_CLOSESTATUSWINDOW（隐藏状态窗口）
+      IMC_GETCANDIDATEPOS（获取候选窗口的位置）
+      IMC_GETCOMPOSITIONFONT（获取用来显示按键组合窗口中的文本的逻辑字体）
+      IMC_GETCOMPOSITIONWINDOW（获取按键组合窗口的位置）
+      IMC_GETSTATUSWINDOWPOS（获取状态窗口的位置）
+      IMC_OPENSTATUSWINDOW（显示状态窗口）
+      IMC_SETCANDIDATEPOS（设置候选窗口的位置）
+      IMC_SETCOMPOSITIONFONT（设置用来显示按键组合窗口中的文本的逻辑字体）
+      IMC_SETCOMPOSITIONWINDOW（设置按键组合窗口的样式）
+      IMC_SETSTATUSWINDOWPOS（设置状态窗口的位置）
+      IMN_CHANGECANDIDATE（IME通知应用程序：候选窗口中的内容将改变）
+      IMN_CLOSECANDIDATE（IME通知应用程序：候选窗口将关闭）
+      IMN_CLOSESTATUSWINDOW（IME通知应用程序：状态窗口将关闭）
+      IMN_GUIDELINE（IME通知应用程序：将显示一条出错或其他信息）
+      IMN_OPENCANDIDATE（IME通知应用程序：将打开候选窗口）
+      IMN_OPENSTATUSWINDOW（IME通知应用程序：将创建状态窗口）
+      IMN_SETCANDIDATEPOS（IME通知应用程序：已结束候选处理同时将移动候选窗口）
+      IMN_SETCOMPOSITIONFONT（IME通知应用程序：输入内容的字体已更改）
+      IMN_SETCOMPOSITIONWINDOW（IME通知应用程序：按键组合窗口的样式或位置已更改）
+      IMN_SETCONVERSIONMODE（IME通知应用程序：输入内容的转换模式已更改）
+      IMN_SETOPENSTATUS（IME通知应用程序：输入内容的状态已更改）
+      IMN_SETSENTENCEMODE（IME通知应用程序：输入内容的语句模式已更改）
+      IMN_SETSTATUSWINDOWPOS（IME通知应用程序：输入内容中的状态窗口的位置已更改）
+      IMR_CANDIDATEWINDOW（通知：选定的IME需要应用程序提供有关候选窗口的信息）
+      IMR_COMPOSITIONFONT（通知：选定的IME需要应用程序提供有关用在按键组合窗口中的字体的信息）
+      IMR_COMPOSITIONWINDOW（通知：选定的IME需要应用程序提供有关按键组合窗口的信息）
+      IMR_CONFIRMRECONVERTSTRING（通知：IME需要应用程序更改RECONVERTSTRING结构）
+      IMR_DOCUMENTFEED（通知：选定的IME需要从应用程序那里取得已转换的字符串）
+      IMR_QUERYCHARPOSITION（通知：选定的IME需要应用程序提供有关组合字符串中某个字符的位置信息）
+      IMR_RECONVERTSTRING（通知：选定的IME需要应用程序提供一个用于自动更正的字符串）
+
+      IME编程中需要用到的数据结构
+      　　这里列了所有在使用输入法编辑器函数和消息时需要用到的数据结构。
+      　　CANDIDATEFORM（描述候选窗口的位置信息）
+      　　CANDIDATELIST（描述有关候选列表的信息）
+      　　COMPOSITIONFORM（描述按键组合窗口的样式和位置信息）
+      　　IMECHARPOSITION（描述按键组合窗口中的字符的位置信息）
+      　　IMEMENUITEMINFO（描述IME菜单项的信息）
+      　　RECONVERTSTRING（定义用于IME自动更正功能的字符串）
+      　　REGISTERWORD（描述一个要注册的读入信息或文字内容）
+      　　STYLEBUF（描述样式的标识符和名称）
+
+      IME常量
+      　　这里列出了所有在使用输入法编辑器函数和消息时需要用到的常量。
+      　　?　IME转换模式常量
+      　　?　IME按键组合字符串常量
+      　　?　IME热键标识常量
+      　　?　IME句型模式常量
+      　　?　IMMEscape函数常量 */
+
+   e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;//使绘图质量最高，即消除锯齿
+          e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+          e.Graphics.CompositingQuality = CompositingQuality.HighQuality;

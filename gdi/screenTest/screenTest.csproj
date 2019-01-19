@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11490B34-E2C7-4FCF-A36A-B2BCF5B79896}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>screenTest</RootNamespace>
+    <AssemblyName>screenTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="screenTest">
+      <HintPath>obj\Debug\screenTest.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarCodeControl.Designer.cs">
+      <DependentUpon>BarCodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCodeLib\BarcodeCommon.cs" />
+    <Compile Include="BarCodeLib\BarcodeLib.cs" />
+    <Compile Include="BarCodeLib\IBarcode.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Blank.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Codabar.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Code11.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Code128.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Code39.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Code93.cs" />
+    <Compile Include="BarCodeLib\Symbologies\EAN13.cs" />
+    <Compile Include="BarCodeLib\Symbologies\EAN8.cs" />
+    <Compile Include="BarCodeLib\Symbologies\FIM.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Interleaved2of5.cs" />
+    <Compile Include="BarCodeLib\Symbologies\ISBN.cs" />
+    <Compile Include="BarCodeLib\Symbologies\ITF14.cs" />
+    <Compile Include="BarCodeLib\Symbologies\JAN13.cs" />
+    <Compile Include="BarCodeLib\Symbologies\MSI.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Pharmacode.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Postnet.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Standard2of5.cs" />
+    <Compile Include="BarCodeLib\Symbologies\Telepen.cs" />
+    <Compile Include="BarCodeLib\Symbologies\UPCA.cs" />
+    <Compile Include="BarCodeLib\Symbologies\UPCE.cs" />
+    <Compile Include="BarCodeLib\Symbologies\UPCSupplement2.cs" />
+    <Compile Include="BarCodeLib\Symbologies\UPCSupplement5.cs" />
+    <Compile Include="Caret.cs" />
+    <Compile Include="CheckBoxListReset.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeEdit.Designer.cs">
+      <DependentUpon>CodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl2OneNodeEditBoxcs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl2OneNodeEditBoxcs.Designer.cs">
+      <DependentUpon>CustomControl2OneNodeEditBoxcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControlContainer.Designer.cs">
+      <DependentUpon>CustomControlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl_ImageContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl_ImageContainer.Designer.cs">
+      <DependentUpon>CustomControl_ImageContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawFocusSelectionBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawFocusSelectionBox.Designer.cs">
+      <DependentUpon>DrawFocusSelectionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImage.Designer.cs">
+      <DependentUpon>FormImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form贴图GDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form贴图GDI.Designer.cs">
+      <DependentUpon>Form贴图GDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GDI+XORAND.cs" />
+    <Compile Include="ILabelDesignElement.cs" />
+    <Compile Include="MultiSelectModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiSelectModel.Designer.cs">
+      <DependentUpon>MultiSelectModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupControl\GripBounds.cs" />
+    <Compile Include="PopupControl\NativeMethods.cs" />
+    <Compile Include="PopupControl\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControl\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupControl\PopupAnimations.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QRCodeControl.Designer.cs">
+      <DependentUpon>QRCodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QRCoder\AbstractQRCode.cs" />
+    <Compile Include="QRCoder\ASCIIQRCode.cs" />
+    <Compile Include="QRCoder\Base64QRCode.cs" />
+    <Compile Include="QRCoder\BitmapByteQRCode.cs" />
+    <Compile Include="QRCoder\Framework4.0Methods\Stream4Methods.cs" />
+    <Compile Include="QRCoder\Framework4.0Methods\String4Methods.cs" />
+    <Compile Include="QRCoder\PayloadGenerator.cs" />
+    <Compile Include="QRCoder\PngByteQRCode.cs" />
+    <Compile Include="QRCoder\PostscriptQRCode.cs" />
+    <Compile Include="QRCoder\QRCode.cs" />
+    <Compile Include="QRCoder\QRCodeData.cs" />
+    <Compile Include="QRCoder\QRCodeGenerator.cs" />
+    <Compile Include="SingleSelectModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleSelectModel.Designer.cs">
+      <DependentUpon>SingleSelectModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBufferStrategy\GapTextBufferStrategy.cs" />
+    <Compile Include="TextBufferStrategy\ITextBufferStrategy.cs" />
+    <Compile Include="TextBufferStrategy\StringTextBufferStrategy.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControlListBoxPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControlListBoxPanel.Designer.cs">
+      <DependentUpon>userControlListBoxPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2Listbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl2Listbox.Designer.cs">
+      <DependentUpon>UserControl2Listbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WheelExtend.cs" />
+    <EmbeddedResource Include="BarCodeControl.resx">
+      <DependentUpon>BarCodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeEdit.resx">
+      <DependentUpon>CodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImage.resx">
+      <DependentUpon>FormImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form贴图GDI.resx">
+      <DependentUpon>Form贴图GDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiSelectModel.resx">
+      <DependentUpon>MultiSelectModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QRCodeControl.resx">
+      <DependentUpon>QRCodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleSelectModel.resx">
+      <DependentUpon>SingleSelectModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControlListBoxPanel.resx">
+      <DependentUpon>userControlListBoxPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Checkbox.png">
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </Resource>
+    <Content Include="unchebox.png" />
+    <Resource Include="QrCode.png" />
+    <Resource Include="Barcode.ico" />
+    <Content Include="DataGridViewRow.left.ico" />
+    <Content Include="DataGridViewRow.right.ico" />
+    <Content Include="info.txt" />
+    <Content Include="ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DrawEverything\DrawEverything.csproj">
+      <Project>{e0e56b68-a399-4706-a203-11995572776e}</Project>
+      <Name>DrawEverything</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
